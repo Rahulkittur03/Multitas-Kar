@@ -198,11 +198,6 @@ public class JarvisMain_Activity extends AppCompatActivity {
             CallAPI(msg);
             return;
         }
-        if(msg.contains("hi"))
-        {
-            speak("Hello Sir! How are you ?");
-            return;
-        }
         if(msg.indexOf("not fine")!=-1)
         {
             speak("take care sir!");
@@ -245,15 +240,21 @@ public class JarvisMain_Activity extends AppCompatActivity {
                 }
             }
         }
-        if(msg=="what you can do")
+        if(msg.contains("what"))
         {
-            String capabilities = "I can help you with various tasks such as:\n" +
-                    "- Searching the web\n" +
-                    "- Telling the current time and date\n" +
-                    "- Playing music on YouTube\n" +
-                    "- Opening apps like Google, Chrome, YouTube, Facebook, Instagram, and WhatsApp\n" +
-                    "- Managing your notes, music, reminders, news, and memes";
-            speak(capabilities);
+            if(msg.contains("can")) {
+                if (msg.contains("do")) {
+                    String capabilities = "I can help you with various tasks such as:\n" +
+                            "- Searching the web\n" +
+                            "- Telling the current time and date\n" +
+                            "- Playing music on YouTube\n" +
+                            "- Opening apps like Google, Chrome, YouTube, Facebook and Instagram\n" +
+                            "- Managing your notes, music, reminders, news, and memes";
+                    speak(capabilities);
+                    text_speach.setText(capabilities);
+                    return;
+                }
+            }
         }
         if(msg.indexOf("open")!=-1)
         {
@@ -338,12 +339,24 @@ public class JarvisMain_Activity extends AppCompatActivity {
                     Toast.makeText(context, "WhatsApp is not installed", Toast.LENGTH_SHORT).show();
                 }
             }
+            return;
         }
         if (msg.contains("play")) {
             String query= msg.replace("play","").replace("music","").trim();
             Log.i("music","this is name"+query);
             Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/results?search_query=" + Uri.encode(query)));
             startActivity(intent);
+        }
+        if(msg.contains("hi"))
+        {
+            speak("Hello Sir! How are you ?");
+            return;
+        }
+        if(msg.contains("hello")) {
+            if (msg.contains("how")) {
+                speak("i am fine how are you!");
+                }
+            return;
         }
     }
 

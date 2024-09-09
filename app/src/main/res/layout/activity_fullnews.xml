@@ -32,6 +32,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/app_title"
         android:indeterminate="true"
+        android:backgroundTint="@color/black"
+        app:indicatorColor="@color/black"
         />
     <WebView
         android:id="@+id/webview"
