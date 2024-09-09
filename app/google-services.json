@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "822973064266",
+    "project_id": "multitaskar-161bc",
+    "storage_bucket": "multitaskar-161bc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:822973064266:android:55420b2c26a00c881e32b3",
+        "android_client_info": {
+          "package_name": "com.example.multitaskar"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgYqwjleglxwD2Sjf13-wnu1qCysleexE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

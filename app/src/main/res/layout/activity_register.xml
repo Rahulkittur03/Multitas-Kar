@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/gradient_0"
+    tools:context=".Register_activity">
+
+    <LinearLayout
+        android:id="@+id/register_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/splashpic"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Multitas-Kar"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/figmaregular"
+            android:textStyle="bold"
+            android:textSize="20sp"/> <!-- Increased text size -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/authentication_register"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/email_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:padding="10dp"
+            android:background="@drawable/rounded_corner_edittext"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="10dp"
+            android:inputType="text"
+            android:elevation="4dp"
+            android:fontFamily="@font/figmaregular"
+            android:paddingStart="20dp"
+            android:textSize="18sp"/> <!-- Increased text size -->
+
+        <EditText
+            android:id="@+id/new_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:padding="10dp"
+            android:background="@drawable/rounded_corner_edittext"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="10dp"
+            android:elevation="4dp"
+            android:inputType="textPassword"
+            android:fontFamily="@font/figmaregular"
+            android:paddingStart="20dp"
+            android:textSize="18sp"/>
+        <EditText
+            android:id="@+id/new_confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:padding="10dp"
+            android:background="@drawable/rounded_corner_edittext"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="10dp"
+            android:elevation="4dp"
+            android:inputType="textPassword"
+            android:fontFamily="@font/figmaregular"
+            android:paddingStart="20dp"
+            android:textSize="18sp"/><!-- Increased text size -->
+
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:elevation="10dp"
+            android:fontFamily="@font/figmaregular"
+            android:background="@drawable/rectange_corner_btn"
+            android:text="Register"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/off_white"
+            android:layout_marginTop="40dp"/>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="40dp"
+            android:indeterminateTint="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All Ready Have a Accout!"
+                android:fontFamily="@font/font_01"
+                android:textColor="@color/gray"
+                android:layout_marginTop="20dp"
+                android:textSize="18sp"/> <!-- Increased text size -->
+
+            <TextView
+                android:id="@+id/login_Connect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Login Account"
+                android:textStyle="bold"
+                android:fontFamily="@font/font_01"
+                android:textColor="@color/blue"
+                android:layout_marginTop="20dp"
+                android:textSize="18sp"/> <!-- Increased text size -->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:backgroundTint="@color/white"
+    android:background="@drawable/rounded_corner_edittext"
+    android:layout_margin="12dp"
+    android:padding="8dp"
+    android:elevation="2dp">
+        <TextView
+            android:id="@+id/reminder_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/font_01"
+            android:paddingStart="2dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tool:text="Title" />
+
+        <TextView
+            android:id="@+id/reminder_content_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/font_01"
+            android:maxLength="12"
+            android:paddingStart="2dp"
+            android:layout_below="@id/reminder_title_tv"
+            tool:text="Content" />
+
+    <TextView
+        android:id="@+id/reminder_Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/font_01"
+        android:paddingStart="2dp"
+        android:textStyle="bold"
+        tool:text="23-apr-2024" />
+
+    <TextView
+        android:id="@+id/reminder_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reminder_Date"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/font_01"
+        android:paddingStart="2dp"
+        android:textStyle="bold"
+        tool:text="12:00" />
+</RelativeLayout>
